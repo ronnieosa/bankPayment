@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>pay_atmInfo</title>
+    <link rel="stylesheet" href="./lib/bs/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/css/creditly.css">
+    <link rel="stylesheet" href="./css/pay.css">
+</head>
+<body>
+<div class="pay_content">
+    <div class="head">
+        <div class="container">
+            <a href="#">
+                <img src="./img/l.png" class="img-responsive">
+            </a>
+            <span class="title">お支払い</span>
+        </div>
+    </div>
+    <div class="banklist_content">
+        <div class="container">
+            <div class="price_area">
+                <p>
+                    お支払金額:&nbsp;&nbsp;<span>5,000</span>円
+                </p>
+            </div>
+        </div>
+        <form>
+            <section class="userForm atmForm">
+                <div class="container">
+                    <label>
+                        お客様氏名（姓）<span class="war">※</span>&nbsp;<span class="hid">必須、全角6文字まで </span>
+                        <input type="text" placeholder="※ 必須、全角6文字まで ">
+                    </label>
+                    <label>
+                        お客様氏名（名）<span class="war">※</span>&nbsp;<span class="hid">必須、全角6文字まで </span>
+                        <input type="text" placeholder="※ 必須、全角6文字まで ">
+                    </label>
+                    <label>
+                        お客様氏名（姓カナ）
+                        <input type="text" placeholder="カナ12文字まで ">
+                    </label>
+                    <label>
+                        お客様氏名（名カナ）
+                        <input type="text" placeholder="カナ12文字まで ">
+                    </label>
+                    <label class="text-center">
+                        <a href="#" class="btn btn-sub btn-atm">次へ</a>
+                    </label>
+                </div>
+            </section>
+        </form>
+        <div class="container">
+            <div class="atm_info">
+                <p>
+                    下記金融機関のペイジーマーク のあるATMでお支払いができます。<br>
+                    ※一部のATMでは対応金融機関のキャッシュカードが<br>
+                    必要になる場合があります。<br>
+                    ※ATMから10万円を超える現金の振込はできません。<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;•	ゆうちょ銀行<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;•	みずほ銀行<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;•	三井住友銀行<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;•	りそな銀行<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;•	埼玉りそな銀行<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;•	千葉銀行<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;•	京葉銀行<br>
+                </p>
+                <p class="iconBar clearfix">
+                    <img src="./img/pay_easy.png" alt="">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="lib/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="lib/js/creditly.js"></script>
+</html>
+
+<script type="text/javascript">
+    $(".btn-atm").on("click",function(){
+        $(".hid").addClass("warError").css("display","inline-block");
+        $(".hid").next("input").addClass("warError");
+    })
+</script>

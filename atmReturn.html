@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>pay_atmReturn</title>
+    <link rel="stylesheet" href="./lib/bs/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/css/creditly.css">
+    <link rel="stylesheet" href="./css/pay.css">
+</head>
+<body>
+<div class="pay_content">
+    <div class="head">
+        <div class="container">
+            <span class="title">お支払い</span>
+        </div>
+    </div>
+    <div class="banklist_content">
+        <div class="container">
+            <div class="price_area">
+                <p>
+                    お支払金額:&nbsp;&nbsp;<span>5,000</span>円
+                </p>
+            </div>
+        </div>
+        <section class="return_area">
+            <div class="container">
+                <div class="title">
+                    <p>銀行ATM（ペイジー）</p>
+                </div>
+                <div class="info clearfix">
+                    <ul>
+                        <li>
+                            <span class="field">収納機関番号：</span>
+                            <span>58091</span>
+                        </li>
+                        <li>
+                            <span class="field">お客様番号：</span>
+                            <span>1724946932</span>
+                        </li>
+                        <li>
+                            <span class="field">確認番号：</span>
+                            <span>253666</span>
+                        </li>
+                        <li>
+                            <span class="field">お支払期限：</span>
+                            <span>2017年09月21日</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot text-right">
+                    <a href="javascript:void(0)" class="atm_link">銀行ATMのお支払方法はこちら</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="promptModal">
+    <div class="p_close">
+        <span>&times;</span>
+    </div>
+    <div class="content">
+        <div class="title text-center">銀行ATMのお支払方法</div>
+        <div class="info">
+            <p>
+                首先验证你的密码，密码正确——
+                输入取款金额，ATM通过内部网络直接查询户账，如账面金额足够支付则下客户帐；如账面金额不足则显示余额不足，取款失败——
+                下客户帐后，ATM从机器内部钞盒出钞。
+                本行卡取款 借：客户帐
+                贷：自助设备存款
+                他行卡取款 涉及银联清算，不过大体也差不多，就是多了中间账户过渡。<br>
+                首先验证你的密码，密码正确——
+                输入取款金额，ATM通过内部网络直接查询户账，如账面金额足够支付则下客户帐；如账面金额不足则显示余额不足，取款失败——
+                下客户帐后，ATM从机器内部钞盒出钞。
+                本行卡取款 借：客户帐
+                贷：自助设备存款
+                他行卡取款 涉及银联清算，不过大体也差不多，就是多了中间账户过渡。<br>
+                首先验证你的密码，密码正确——
+                输入取款金额，ATM通过内部网络直接查询户账，如账面金额足够支付则下客户帐；如账面金额不足则显示余额不足，取款失败——
+                下客户帐后，ATM从机器内部钞盒出钞。
+                本行卡取款 借：客户帐
+                贷：自助设备存款
+                他行卡取款 涉及银联清算，不过大体也差不多，就是多了中间账户过渡。<br>
+                首先验证你的密码，密码正确——
+                输入取款金额，ATM通过内部网络直接查询户账，如账面金额足够支付则下客户帐；如账面金额不足则显示余额不足，取款失败——
+                下客户帐后，ATM从机器内部钞盒出钞。
+                本行卡取款 借：客户帐
+                贷：自助设备存款
+                他行卡取款 涉及银联清算，不过大体也差不多，就是多了中间账户过渡。<br>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="lib/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="lib/js/creditly.js"></script>
+</html>
+
+<script type="text/javascript">
+    $(".atm_link").on("click",function(){
+        $(".promptModal").css("display","block");
+    })
+    $(".p_close > span").on("click",function(){
+        $(".promptModal").css("display","none");
+    })
+</script>

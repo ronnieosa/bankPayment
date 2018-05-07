@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>pay_method</title>
+    <link rel="stylesheet" href="./lib/bs/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/css/creditly.css">
+    <link rel="stylesheet" href="./css/pay.css">
+</head>
+<body>
+    <div class="pay_content">
+        <div class="head">
+            <div class="container">
+                <a href="#">
+                    <img src="./img/l.png" class="img-responsive">
+                </a>
+                <span class="title">お支払い</span>
+            </div>
+        </div>
+        <div class="form_content">
+            <div class="container">
+                <div class="price_area">
+                    <p>
+                        お支払金額:&nbsp;&nbsp;<span>5,000</span>円
+                    </p>
+                </div>
+            </div>
+            <form class="creditly-card-form">
+                <section class="creditly-wrapper">
+                    <div class="container">
+                        <div class="card">
+                            <label>
+                                <img src="./img/card.png" alt="">
+                                <input type="text" name="number" id="cardid" placeholder="クレジットカード" class="">
+                            </label>
+                        </div>
+                        <div class="date">
+                            <div class="input_are">
+                                <label class="control-label">期限
+                                    <input class="expiration-month-and-year" type="text" name="expiration-month-and-year" placeholder="MM / YY" id="date">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <label>
+                                セキュリティコード
+                                <input type="text" name="security-code" placeholder="Ex.123" id="cvv" class="">
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                <div class="sub_ctro text-center">
+                    <button class="submit"><span>お支払</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="lib/js/jquery-1.10.2.min.js"></script>
+</html>
+
+<script type="text/javascript">
+
+    $(function() {
+        //    卡号限定
+        var t = document.getElementById("cardid");
+        t.onkeydown = change;
+        t.onkeyup = change;
+        t.onkeypress = change;
+        function change() {
+            this.value = this.value.replace(/\D/g, '').replace(/....(?!$)/g, '$& '); //替换空格前4位数字为4位数字加空格
+            //12位数限定
+            var verifyValue = $(this).val();
+            verifyValue=verifyValue.replace(/\s+/g,"");//清掉空格
+            if(verifyValue.length > 16){
+                verifyValue = verifyValue.substring(0,16);
+                verifyValue = verifyValue.replace(/\D/g, '').replace(/....(?!$)/g, '$& ');
+                $(this).val(verifyValue)
+            }
+
+        }
+        //      期限限定
+        var s = document.getElementById("date");
+        s.onkeydown = changed;
+        s.onkeyup = changed;
+        s.onkeypress = changed;
+        function changed() {
+            this.value=this.value.replace(/[^\d/]/g,'');
+            if (this.value.length >= 2) {
+                var newInput = this.value.slice(0, 2) + " / " + this.value.slice(3,5);
+                $('#date').val(newInput);
+                newInput = newInput.replace(/\s+/g,"");
+            }
+        }
+        //cvv限定
+        // 位数限定
+        var d = document.getElementById("cvv");
+        d.onkeydown = changes;
+        d.onkeyup = changes;
+        d.onkeypress = changes;
+        function changes() {
+            this.value=this.value.replace(/[^\d/]/g,'');
+            var cVal = $(this).val();
+            if(cVal.length > 3){
+                cVal = cVal.substring(0,3);
+                $(this).val(cVal)
+            }
+        }
+        // 错误提示
+        $(".submit").on("click",function(e){
+            e.preventDefault();
+            $(".creditly-wrapper input").addClass("has-error");
+        })
+    });
+
+</script>

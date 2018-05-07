@@ -1,0 +1,552 @@
+/*bootstrap*/
+.btn-sub {
+    color: #fff;
+    background-color: #de2f50;
+    border-color: #de2f50;
+    border-radius: 0;
+}
+.btn-sub:focus,
+.btn-sub.focus {
+    color: #fff;
+    background-color: #de2f50;
+    border-color: #de2f50;
+}
+.btn-sub:hover {
+    color: #fff;
+    background-color: #de2f50;
+    border-color: #de2f50;
+}
+.btn-sub:active,
+.btn-sub.active,
+.open > .dropdown-toggle.btn-sub {
+    color: #fff;
+    background-color: #de2f50;
+    border-color: #de2f50;
+}
+.btn-sub:active:hover,
+.btn-sub.active:hover,
+.open > .dropdown-toggle.btn-sub:hover,
+.btn-sub:active:focus,
+.btn-sub.active:focus,
+.open > .dropdown-toggle.btn-sub:focus,
+.btn-sub:active.focus,
+.btn-sub.active.focus,
+.open > .dropdown-toggle.btn-sub.focus {
+    color: #fff;
+    background-color: #de2f50;
+    border-color: #de2f50;
+}
+.btn-sub:active,
+.btn-sub.active,
+.open > .dropdown-toggle.btn-sub {
+    background-image: none;
+}
+.btn-sub.disabled:hover,
+.btn-sub[disabled]:hover,
+fieldset[disabled] .btn-sub:hover,
+.btn-sub.disabled:focus,
+.btn-sub[disabled]:focus,
+fieldset[disabled] .btn-sub:focus,
+.btn-sub.disabled.focus,
+.btn-sub[disabled].focus,
+fieldset[disabled] .btn-sub.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-sub .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+body{
+    font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+    /*font-family:"SimHei";*/
+    overflow-x: hidden;
+}
+input {
+    padding: 0;
+    border: 0;
+    color: #494949;
+    font-size: 16px;
+}
+input::-webkit-input-placeholder {
+    color:#d2d2d7;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0;
+}
+:focus {
+    outline: 0;
+}
+.pay_content {
+    height: 100vh;
+    background: #efefef;
+}
+.pay_content > .head{
+    background: #de2f50;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    position: relative;
+}
+.pay_content > .head a {
+    position: absolute;
+    left: 0;
+    top: 0 ;
+    width:47px;
+    height: 47px;
+    line-height: 47px;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+.pay_content > .head a > img {
+    height: 27px;
+}
+.pay_content > .head .title {
+    font-size: 16px;
+    color:#ffffff;
+}
+.form_content{
+    background: #efefef;
+}
+.form_content .price_area {
+    height: 52px;
+    line-height: 53px;
+    color:#494949;
+    font-weight: bold;
+    font-size: 16px;
+}
+.form_content .price_area p{
+    margin-bottom: 0;
+}
+/*插件*/
+.creditly-wrapper {
+    background: #fff;
+    width:100%;
+    border-radius: 0;
+    min-height: 137px;
+}
+.creditly-wrapper > .container {
+    padding-right: 0;
+    border-bottom: 1px solid #cbcace;
+    border-top: 1px solid #cbcace;
+}
+.creditly-wrapper > .container .card {
+    height: 45px;
+    /*padding-left: 15px;*/
+}
+.creditly-wrapper > .container .card  label{
+    margin-bottom: 0;
+    width:100%;
+    height: 100%;
+    border-bottom: 1px solid #cbcace;
+}
+.creditly-wrapper > .container .card label img {
+    margin-right: 5px;
+    /*margin-left: 2px;*/
+}
+.creditly-wrapper > .container .card label input {
+    width: 87.5%;
+    padding: 11px 5px;
+    font-weight: lighter;
+}
+
+.creditly-wrapper > .container .date {
+    height: 45px;
+    /*padding-left: 15px;*/
+    line-height: 33px;
+}
+.creditly-wrapper > .container .date .input_are {
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #cbcace;
+}
+.creditly-wrapper > .container .date label {
+    display: block;
+    height: 45px;
+    color: #363636;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+
+}
+/*.creditly-wrapper > .container .date label input{*/
+    /*height: 40px;*/
+    /*width: 90px;*/
+    /*margin-left: 222px;*/
+    /*font-weight: lighter;*/
+    /*padding: 10px 10px;*/
+/*}*/
+.creditly-wrapper > .container .date input[name = 'expiration-month-and-year']{
+    float: right;
+    width:90px;
+    height: 44px;
+    padding-left: 10px;
+    margin-right: 13px;
+    font-weight: 400;
+}
+.creditly-wrapper > .container .info {
+    height: 45px;
+    line-height: 45px;
+}
+.creditly-wrapper > .container .info label {
+     display: block;
+     height: 45px;
+     color: #363636;
+     font-size: 15px;
+     font-weight: lighter;
+     margin-bottom: 0;
+     font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+ }
+.creditly-wrapper > .container .info input[name = 'security-code']{
+    float: right;
+    width:90px;
+    height: 45px;
+    padding-left: 10px;
+    margin-right: 13px;
+    font-weight: 400;
+}
+.creditly-wrapper > .container .info input[name = 'name']{
+    height: 45px;
+}
+.sub_ctro {
+    padding: 70px 0 ;
+}
+.creditly-card-form .submit {
+    border-radius: 0;
+    background-image: linear-gradient(#de2f50,#de2f50);
+}
+.creditly-card-form .submit span {
+    padding: 5px 60px;
+    height: 40px;
+    background: #de2f50;
+    font-size: 16px;
+}
+.creditly-wrapper input.has-error {
+    background: #f9dfde;
+    border: 0;
+    color:#ff1829!important;
+}
+
+/* succeed */
+.form_content .succeed_area {
+    padding-top: 55px;
+}
+.form_content .succeed_area p {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #494949;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+/* failed */
+.form_content .failed_area {
+    padding-top: 55px;
+}
+.form_content .failed_area p {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #494949;
+    margin-bottom: 0;
+}
+.form_content .failed_area .space{
+    height: 52px;
+}
+.form_content .return {
+    margin-top: 45px;
+    padding-left: 10px;
+}
+.form_content .return p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #494949;
+    margin-bottom: 0;
+}
+.form_content .return span{
+    font-size: 12px;
+    color: #494949;
+}
+/* netbank */
+.banklist_content .price_area {
+    height: 43px;
+    line-height: 44px;
+    color: #494949;
+    font-weight: bold;
+    font-size: 16px;
+}
+.banklist_content .price_area p {
+    margin-bottom: 0;
+}
+.banklist_content .list_area {
+    background: #fff;
+}
+.banklist_content .list_area ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.banklist_content .list_area ul li{
+    border-bottom: 1px solid #777777;
+    padding-left: 15px;
+}
+.banklist_content .list_area ul li a{
+    display: block;
+    padding: 6px 0;
+}
+.banklist_content .list_area ul li a span {
+    font-size: 15px;
+    color:#494949;
+    padding:0 ;
+}
+.banklist_content .list_area ul li a span:nth-of-type(2){
+    height:28px;
+    line-height: 30px;
+}
+.banklist_content .list_area ul li a img {
+    max-height:28px;
+    max-width: 50px;
+    display: inline-block;
+}
+.banklist_content > .container {
+    border-bottom: 1px solid #777777;
+}
+
+@media screen and (max-width: 376px){
+    .creditly-wrapper > .container .card label input {
+        width: 86.1%;
+    }
+}
+@media screen and (max-width: 321px){
+    .banklist_content .list_area ul li a span:nth-of-type(2) {
+        padding-left: 15px;
+    }
+    .creditly-wrapper > .container .card label input {
+        width: 83.5%;
+    }
+}
+/* userInfo */
+.userForm {
+    border-bottom: 1px solid #777777;
+}
+.userForm label {
+    width: 100%;
+    padding: 0 10px;
+    color:#494949;
+}
+.userForm label:nth-of-type(1){
+    margin-top: 15px;
+}
+.userForm label input {
+    width: 100%;
+    padding: 4px 0;
+    padding-left: 7px;
+    margin-top: 5px;
+    border: 1px solid #CCCACE;
+    font-size: 12px;
+}
+.userForm label input::-webkit-input-placeholder {
+    font-size: 12px;
+    color:#8d8b8b;
+}
+.war {
+    color:#cd5b70;
+    font-weight: lighter;
+    font-size: 16px;
+}
+.userForm .submit {
+    border-radius: 0;
+    background-image: linear-gradient(#de2f50,#de2f50);
+}
+.userForm .submit span {
+    padding: 5px 60px;
+    height: 40px;
+    background: #de2f50;
+    font-size: 16px;
+}
+.btn-user {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 17px;
+}
+.btn-atm {
+    width: 50%;
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 17px;
+}
+.btn-fin {
+    width: 50%;
+    margin-top: 100px;
+    padding: 8px 12px;
+    font-size: 17px;
+}
+.userForm label:nth-last-of-type(1){
+    margin-bottom: 20px;
+}
+.banklist_content > .container:nth-of-type(2){
+    border-bottom: none;
+    background: #efefef;
+}
+.notice_info {
+    margin-top: 25px;
+    padding: 0 10px;
+}
+.notice_info p {
+    color:#000;
+    font-size: 12px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+/* ATm */
+.atm_info {
+    padding: 0 10px;
+    margin-top: 15px;
+}
+.atm_info p {
+    color:#000;
+    font-size: 12px;
+    font-weight: bold;
+}
+.iconBar {
+    position: relative;
+}
+.iconBar img {
+    position: absolute;
+    right: 20px;
+    bottom: 15px
+}
+/* atmReturn */
+.return_area {}
+.return_area .title {
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+.return_area .title p {
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #494949;
+}
+.return_area .info {
+    background: #ffffff;
+    border: 1px solid #777;
+    padding: 30px 15px;
+}
+.return_area .info ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.return_area .info ul li {
+    margin-bottom: 10px;
+}
+.return_area .info ul li:nth-last-of-type(1){
+    margin-bottom: 0;
+}
+.return_area .info ul li span {
+    font-size: 15px;
+    display: inline-block;
+    color:#494949;
+}
+.return_area .info ul li span.field {
+    width:115px;
+}
+.return_area .foot {
+    padding-top: 20px;
+}
+.return_area .foot a {
+    font-size: 12px;
+    color:#cd5b70;
+    text-decoration: underline;
+}
+.hid {
+    font-size: 12px;
+    font-weight: normal;
+    display: none;
+}
+.warError {
+    color: #cd5b70;
+    border-color: #cd5b70!important;
+}
+.promptModal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    top:0;
+    left:0;
+    background: #000;
+    opacity: .8;
+    display: none;
+}
+.promptModal .p_close {
+    width:100%;
+    padding: 6px 5px;
+}
+.promptModal .p_close span {
+    display: inline-block;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color:#fff;
+}
+.promptModal .content {
+    color:#fff;
+    padding: 0 15px;
+}
+.promptModal .content .title {
+    font-size: 16px;
+}
+.promptModal .content .info {
+    font-size: 13px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+/* bankDetail */
+.banklist_content .formReturn {
+    margin-top: 15px;
+    border-bottom: 1px solid #777777;
+}
+.banklist_content .formReturn .form_label{
+    background: #fff;
+    border: 1px solid #5a5a5a;
+    padding: 10px 15px;
+    padding-bottom: 25px;
+}
+.banklist_content .formReturn .form_label input {
+    font-size: 15px;
+}
+.banklist_content .formReturn .form_label label{
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.banklist_content .formReturn .sub_btn {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.banklist_content .formReturn .sub_btn input{
+    color: #fff;
+    background-color: #de2f50;
+    border-color: #de2f50;
+    padding: 10px 12px;
+    font-size: 17px;
+    width: 90%;
+}
+.btn-resp {
+    width: 88%;
+    padding: 8px 12px;
+    font-size: 17px;
+}

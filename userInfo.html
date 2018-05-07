@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>pay_userInfo</title>
+    <link rel="stylesheet" href="./lib/bs/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/css/creditly.css">
+    <link rel="stylesheet" href="./css/pay.css">
+</head>
+<body>
+<div class="pay_content">
+    <div class="head">
+        <div class="container">
+            <a href="#">
+                <img src="./img/l.png" class="img-responsive">
+            </a>
+            <span class="title">お支払い銀行選択</span>
+        </div>
+    </div>
+    <div class="banklist_content">
+        <div class="container">
+            <div class="price_area">
+                <p>
+                    お支払金額:&nbsp;&nbsp;<span>5,000</span>円
+                </p>
+            </div>
+        </div>
+        <form>
+            <section class="userForm">
+                <div class="container">
+                    <label>
+                        お客様氏名（姓）<span class="war">※</span>&nbsp;<span class="hid">必須、全角6文字まで </span>
+                        <input type="text" placeholder="※ 必須、全角6文字まで " class="">
+                    </label>
+                    <label>
+                        お客様氏名（名）<span class="war">※</span>&nbsp;<span class="hid">必須、全角6文字まで </span>
+                        <input type="text" placeholder="※ 必須、全角6文字まで " class="">
+                    </label>
+                    <label>
+                        お客様氏名（姓カナ）
+                        <input type="text" placeholder="カナ12文字まで ">
+                    </label>
+                    <label>
+                        お客様氏名（名カナ）
+                        <input type="text" placeholder="カナ12文字まで ">
+                    </label>
+                    <label>
+                        <a href="#" class="btn btn-sub btn-user">お支払金融機関選択</a>
+                    </label>
+                </div>
+            </section>
+        </form>
+        <div class="container">
+            <div class="notice_info">
+                <p>
+                    各金融機関に口座をお持ちのうえ、事前にネットバンキング
+                    サービスのお申込が必要となります。
+                </p>
+                <p>
+                    ネットバンキングの操作方法、及び対応OS･ブラウザにつ
+                    きましては、直接、各金融機関にお問合せください。
+                </p>
+                <p>
+                    電波の不安定な場所で操作すると、お支払を確認できない
+                    場合がありますので、ご注意ください。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="lib/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="lib/js/creditly.js"></script>
+</html>
+
+<script type="text/javascript">
+    $(".btn-user").on("click",function(){
+        $(".hid").addClass("warError").css("display","inline-block");
+        $(".hid").next("input").addClass("warError");
+    })
+</script>
